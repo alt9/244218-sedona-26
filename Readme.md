@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Сергей Мосин](https://up.htmlacademy.ru/htmlcss/26/user/244218).
-* Наставник: Андрей Пудов.
+* Наставник: [Андрей Пудов](https://htmlacademy.ru/profile/kamelot43).
 
 ---
 

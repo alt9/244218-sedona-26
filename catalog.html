@@ -33,8 +33,75 @@
 		<h1>Каталог</h1>
 
 		<section>
-			<h2>Выбор гостиницы</h2>
-			<!-- form -->
+      <form action="https://echo.htmlacademy.ru" method="post">
+		    <h2>Выбор гостиницы</h2>
+        <div class="form-check">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="Бассейн" id="bassein" checked>
+                <label for="bassein">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Парковка" id="park">
+                <label for="park">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Wi-Fi" id="wifi">
+                <label for="wifi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="Гостиница" id="hotel" checked>
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Мотель" id="motel" checked>
+                <label for="motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Апартаменты" id="apartment" checked>
+                <label for="apartment">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Стоимость в сутки (р.):</legend>
+            <div class="form-calc">
+              <span>От 0</span>
+              <span>До 3000</span>
+            </div>
+            <div class="form-bundle">
+              <!-- Бегунок-->
+            </div>
+            <button class="form-btn" type="submit">Показать</button>
+          </fieldset>
+        </div>
+
+        <div class="form-sort">
+          <div class="form-result">
+            <span>Найдено: 3</span>
+          </div>
+          <div class="form-sort-check">
+            <span>Сортировка:</span>
+            <ul>
+              <li class="form-sort-text">По цене</li>
+              <li class="form-sort-text">По типу</li>
+              <li class="form-sort-text">По рейтингу</li>
+            </ul>
+          </div>
+          <div class="form-result-order">
+            <!-- Сортировка по возрастанию и убыванию-->
+          </div>
+        </div>
+      </form>
 		</section>
 
 		<section>

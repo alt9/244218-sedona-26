@@ -75,8 +75,10 @@
           <fieldset>
             <legend>Стоимость в сутки (р.):</legend>
             <div class="form-calc">
-              <span>От 0</span>
-              <span>До 3000</span>
+              <label for="min-price"></label>
+              <input id="min-price" type="text" name="price" value="" placeholder="От 0">
+              <label for="max-price"></label>
+              <input id="max-price" type="text" name="price" value="" placeholder="До 3000">
             </div>
             <div class="form-bundle">
               <!-- Бегунок-->
@@ -99,6 +101,8 @@
           </div>
           <div class="form-result-order">
             <!-- Сортировка по возрастанию и убыванию-->
+            <a href="index.html"></a>
+            <a href="index.html"></a>
           </div>
         </div>
       </form>
@@ -112,12 +116,13 @@
           <span>от 4000 р.</span>
           <a href="#">подробнее</a>
           <a href="#">забронировать</a>
-          <ol>
-            <li aria-label="star"></li>
-            <li aria-label="star"></li>
-            <li aria-label="star"></li>
-            <li aria-label="star"></li>
-          </ol>
+          <!--Рейтинг отелей - выглядит как звёздочки -->
+          <ul class="hotels-rate">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+          </ul>
           <span>рейтинг: 8,5</span>
 					<p>
             <a href="catalog-item.html">
@@ -130,11 +135,12 @@
           <span>от 3000 р.</span>
           <a href="#">подробнее</a>
           <a href="#">забронировать</a>
-          <ol>
-            <li aria-label="star"></li>
-            <li aria-label="star"></li>
-            <li aria-label="star"></li>
-          </ol>
+          <!--Рейтинг отелей - выглядит как звёздочки -->
+          <ul class="hotels-rate">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
           <span>рейтинг: 8,9</span>
 					<p>
             <a href="catalog-item.html"><img src="img/hotel-2.jpg" width="135" height="90" alt="Desert Quail Inn"></a>
@@ -146,10 +152,11 @@
           <span>от 2000 р.</span>
           <a href="#">подробнее</a>
           <a href="#">забронировать</a>
-          <ol>
-            <li aria-label="star"></li>
-            <li aria-label="star"></li>
-          </ol>
+          <!--Рейтинг отелей - выглядит как звёздочки -->
+          <ul class="hotels-rate">
+            <li>1</li>
+            <li>2</li>
+          </ul>
           <span>рейтинг: 9,2</span>
 					<p>
             <a href="catalog-item.html"><img src="img/hotel-3.jpg" width="135" height="90" alt="Villas at poco diablo"></a>
@@ -163,19 +170,18 @@
 	<footer>
 		<a href="index.html">#VISITSEDONA</a>
 
-		<div><!-- Social -->
-      <ul>
-        <li>
-          <a href="https://twitter.com/" aria-label="Twitter"></a>
-        </li>
-        <li>
-          <a href="https://facebook.com/" aria-label="Facebook"></a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/" aria-label="Youtube"></a>
-        </li>
-      </ul>
-		</div>
+    <!-- Social -->
+    <ul>
+      <li>
+        <a href="https://twitter.com/" aria-label="Twitter"></a>
+      </li>
+      <li>
+        <a href="https://facebook.com/" aria-label="Facebook"></a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/" aria-label="Youtube"></a>
+      </li>
+    </ul>
 
 		<div><!-- Academy -->
 			<a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy">Website by</a>

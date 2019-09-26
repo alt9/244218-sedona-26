@@ -86,18 +86,26 @@
 		</section>
 
 		<div>
-			<p class="main_big">Заинтересовались?</p>
-			<p class="main_desc">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+			<p class="main-big">Заинтересовались?</p>
+			<p class="main-desc">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 		</div>
 
 		<form action="https://echo.htmlacademy.ru" method="post">
 			<h2 class="form-heading">Поиск гостиницы в Седоне</h2>
 			<p>
-        <label for="arrival-date">Дата заезда:</label>
+        <label for="arrival-date">
+          Дата заезда:
+          <!--Иконка календарика -->
+          <span class="date-choice"></span>
+        </label>
         <input id="arrival-date" type="text" name="date" value="" placeholder="24 апреля 2017">
       </p>
 			<p>
-        <label for="departure-date">Дата выезда:</label>
+        <label for="departure-date">
+          Дата выезда:
+          <!--Иконка календарика -->
+          <span class="date-choice"></span>
+        </label>
         <input id="departure-date" type="text" name="date" value="" placeholder="4 июля 2017">
       </p>
 

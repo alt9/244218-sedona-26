@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
-	<header>
-		<nav>
+	<header class="main-header">
+		<nav class="main-nav">
 			<div class="logo">
     		<a href="index.html"><img src="img/logo-sedona.svg" width="184" height="101" alt="Sedona"></a>
     	</div>
 
-			<ul class="main_nav">
+			<ul class="site-nav">
 				<li>
           <a href="info.html">Информация</a>
         </li>
@@ -29,30 +32,33 @@
 		</nav>
 	</header>
 
-	<main>
+	<main class="container">
 
-		<div>
-			<h1>Добро пожаловать в Седону</h1>
-			<h2>Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+		<div class="main-heading">
+			<h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+			<h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
 			<p class="main_desc">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 		</div>
 
 		<section>
-      <ul>
-		    <li>
-          <h2>Настоящий городок</h2>
-          <span>- №1 -</span>
-          <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+      <ul class="features-list">
+		    <li class="feature-top">
+          <div class="feature-top-desc">
+            <h2>Настоящий городок</h2>
+            <span>- №1 -</span>
+            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
+          <div class="feature-top-image"></div>
         </li>
-        <li>
+        <li class="feature-item">
           <h3>Жильё</h3>
           <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </li>
-        <li>
+        <li class="feature-item">
           <h3>Еда</h3>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
-        <li>
+        <li class="feature-item">
           <h3>Сувениры</h3>
           <p>Не только китайского, но и местного производства!</p>
         </li>
@@ -60,24 +66,27 @@
 		</section>
 
 		<section>
-      <ul>
-		    <li>
-          <h2>Там есть мост дьявола</h2>
-          <span>- №2 -</span>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+      <ul class="features-list">
+		    <li class="feature-top">
+          <div class="feature-top-image"></div>
+          <div class="feature-top-desc">
+            <h2>Там есть мост дьявола</h2>
+            <span>- №2 -</span>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
         </li>
 
-        <li>
+        <li class="feature-item">
           <h3>Небольшая площадь</h3>
           <span>- №3 -</span>
           <p>Все достопримечатальности находятся очень близко</p>
         </li>
-        <li>
+        <li class="feature-item">
           <h3>Красивая дорога</h3>
           <span>- №4 -</span>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
-        <li>
+        <li class="feature-item">
           <h3>Мало туристов</h3>
           <span>- №5 -</span>
           <p>Большинство едет в Гранд-Каньон и толпится там</p>
@@ -110,16 +119,16 @@
       </p>
 
       <div>
-        <span>Взрослые:</span>
-        <label for="old">2</label>
-        <input id="old" type="button">
-        <input id="old" type="button">
+        <label for="old">Взрослые:</label>
+        <!--Кнопка минус --><input id="" type="button">
+        <input id="old" type="text" placeholder="2">
+        <!--Кнопка плюс --><input id="" type="button">
       </div>
 			<div>
-        <span>Дети:</span>
-        <label for="old">0</label>
-        <input id="old" type="button">
-        <input id="old" type="button">
+        <label for="young">Дети:</label>
+        <!--Кнопка минус --><input id="" type="button">
+        <input id="young" type="text" placeholder="0">
+        <!--Кнопка плюс --><input id="" type="button">
       </div>
 			<button class="blue-btn" type="submit">Найти</button>
 		</form>

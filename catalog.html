@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
-	<header>
-		<nav>
+	<header class="main-header">
+		<nav class="main-nav">
 			<div class="logo">
     		<a href="index.html"><img src="img/logo-sedona.svg" width="184" height="101" alt="Sedona"></a>
     	</div>
 
-			<ul class="main_nav">
+			<ul class="site-nav">
 				<li>
           <a href="info.html">Информация</a>
         </li>
@@ -29,12 +32,12 @@
 		</nav>
 	</header>
 
-	<main>
-		<h1>Каталог</h1>
+	<main class="container">
+		<h1 class="visually-hidden">Каталог</h1>
 
 		<section>
       <form action="https://echo.htmlacademy.ru" method="post">
-		    <h2>Выбор гостиницы</h2>
+		    <h2 class="visually-hidden">Выбор гостиницы</h2>
         <div class="form-check">
           <fieldset>
             <legend>Инфраструктура:</legend>
@@ -75,13 +78,20 @@
           <fieldset>
             <legend>Стоимость в сутки (р.):</legend>
             <div class="form-calc">
-              <label for="min-price">От 0</label>
-              <input id="min-price" type="text" name="price" value="">
-              <label for="max-price">До 3000</label>
-              <input id="max-price" type="text" name="price" value="">
+              <label class="min-price">От
+                <input type="text" name="min-price" value="0" >
+              </label>
+              <label class="max-price">До
+                <input type="text" name="max-price" value="3000">
+              </label>
             </div>
-            <div class="form-bundle">
-              <!-- Бегунок-->
+            <div class="range-controls">
+              <!-- Бегунок выбора цены-->
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
             </div>
             <button class="form-btn" type="submit">Показать</button>
           </fieldset>

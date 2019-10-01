@@ -11,7 +11,7 @@ body {
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
@@ -49,16 +49,35 @@ input[type="radio"].visually-hidden {
 .main-header {
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #ffffff;
 }
 
 .main-nav {
+  position: relative;
+
   font-weight: 700;
   color: #000000;
+  background-color: #ffffff;
+}
+
+.logo {
+  position: absolute;
+
+  width: 138px;
+  left: calc(50% - 69px);
 }
 
 .site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.site-nav-item {
+  width: 240px;
+  padding: 17px 0 17px 0;
 }
 
 .site-nav a {
@@ -66,7 +85,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-nav a:hover {
-  color: #81B3D2;
+  color: #81b3d2;
 }
 
 .site-nav a:focus {
@@ -81,22 +100,53 @@ input[type="radio"].visually-hidden {
   max-width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
+
 }
 
-.main-heading h2 {
+.main-heading {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 773px;
+  background-image: url("../img/intro-welcome.svg"), url("../img/bg.jpg");
+  background-size: 458px 352px, 100% auto;
+  background-repeat: no-repeat;
+  background-position: 50% 30%, 100% 100%;
+}
+
+.main-heading-wrapper {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.main-heading-wrapper h2 {
+  margin: 0;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
+}
+
+.main-heading-wrapper p {
+  margin: 0;
+  line-height: 26px;
 }
 
 .features-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
+.feature-top {
+  display: flex;
+}
+
 .feature-top-desc {
+  width: 400px;
   color: #ffffff;
-  background-color: #81B3D2;
+  background-color: #81b3d2;
 }
 
 .feature-top-desc h2 {
@@ -104,3 +154,66 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   font-weight: 700;
 }
+
+.feature-top-image {
+  width: 800px;
+  /*flex-grow: 1;*/
+  background-repeat: no-repeat;
+}
+
+.image-top {
+  background-image: url("../img/places-1.jpg");
+}
+
+.image-bottom {
+  background-image: url("../img/places-2.jpg");
+}
+
+.feature-item {
+  width: 400px;
+  background-color: #cccccc;
+}
+
+.feature-item-bg {
+  background-color: #eeeeee;
+}
+
+.feature-item h3 {
+  font-weight: 700;
+  color: #000000;
+}
+
+b {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.search-desc {
+  line-height: 24px;
+}
+
+.interest {
+  background-color: #cccccc;
+}
+
+.hotel-search {
+  width: 568px;
+  margin: 0 auto;
+  background-color: #d9d9d9;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.form-head-wrapper {
+  background-color: #766357;
+}
+
+.form-head-wrapper .form-heading {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  padding: 20px 0 20px 0;
+  color: #ffffff;
+}
+

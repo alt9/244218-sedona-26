@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
 
+  min-width: 1280px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -63,7 +64,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
 
   width: 138px;
-  left: calc(50% - 69px);
+  left: 531px;
 }
 
 .site-nav {
@@ -109,7 +110,7 @@ input[type="radio"].visually-hidden {
 .main-heading {
   display: flex;
   flex-direction: column-reverse;
-  height: 773px;
+  min-height: 508px;
   background-image: url("../img/intro-welcome.svg"), url("../img/bg.jpg");
   background-size: 458px 352px, 100% auto;
   background-repeat: no-repeat;
@@ -445,12 +446,254 @@ b {
 /*Начало стилей для каталога*/
 
 .form-check {
+  display: flex;
+  flex-wrap: wrap;
   color: #ffffff;
-  background-image: url("../img/bg-catalog.jpg");
+  background-image: url("../img/bg-catalog1.jpg");
   background-repeat: no-repeat;
   background-color: #cccccc;
 }
 
 .form-check fieldset {
+  padding: 0;
+  margin: 0;
   border: 0;
+  margin-left: 72px;
+}
+
+.form-check ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-bottom: 31px;
+}
+
+.form-check li {
+  padding-bottom: 30px;
+  padding-left: 40px;
+}
+
+.form-checkboxes {
+  width: 200px;
+}
+
+.form-filter {
+  width: 350px;
+}
+
+legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  padding-top: 29px;
+  padding-bottom: 26px;
+}
+
+.legend-filter {
+  padding-bottom: 9px;
+}
+
+.form-checkboxes label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+.form-input-checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+
+  width: 26px;
+  height: 26px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+}
+
+
+/*Фильтр с ползунками*/
+.form-calc {
+  position: relative;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.form-calc::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.form-calc label {
+
+}
+
+.form-calc .min-price,
+.form-calc .max-price {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+  width: 90px;
+  padding-left: 65px;
+}
+
+.form-calc input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.form-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+.form-sort {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fefefe;
+}
+
+.form-result span {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  margin-left: 72px;
+}
+
+.form-sort-check {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-sort-check span {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.form-sort-check ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.form-sort-text {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.form-sort-a {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 2px dotted #81b3d2;
+}
+
+.form-sort-current {
+  color: #81b3d2;
+  border: none;
 }

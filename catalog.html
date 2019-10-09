@@ -43,44 +43,44 @@
       <form action="https://echo.htmlacademy.ru" method="post">
 		    <h2 class="visually-hidden">Выбор гостиницы</h2>
         <div class="form-check">
-          <fieldset>
+          <fieldset class="form-checkboxes">
             <legend>Инфраструктура:</legend>
             <ul>
               <li>
-                <input type="checkbox" name="Бассейн" id="bassein" checked>
+                <input class="visually-hidden form-input-checkbox" type="checkbox" name="Бассейн" id="bassein" checked>
                 <label for="bassein">Бассейн</label>
               </li>
               <li>
-                <input type="checkbox" name="Парковка" id="park">
+                <input class="visually-hidden form-input-checkbox" type="checkbox" name="Парковка" id="park">
                 <label for="park">Парковка</label>
               </li>
               <li>
-                <input type="checkbox" name="Wi-Fi" id="wifi">
+                <input class="visually-hidden form-input-checkbox" type="checkbox" name="Wi-Fi" id="wifi">
                 <label for="wifi">Wi-Fi</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="form-checkboxes">
             <legend>Тип жилья:</legend>
             <ul>
               <li>
-                <input type="checkbox" name="Гостиница" id="hotel" checked>
+                <input class="visually-hidden form-input-checkbox" type="checkbox" name="Гостиница" id="hotel" checked>
                 <label for="hotel">Гостиница</label>
               </li>
               <li>
-                <input type="checkbox" name="Мотель" id="motel" checked>
+                <input class="visually-hidden form-input-checkbox" type="checkbox" name="Мотель" id="motel" checked>
                 <label for="motel">Мотель</label>
               </li>
               <li>
-                <input type="checkbox" name="Апартаменты" id="apartment" checked>
+                <input class="visually-hidden form-input-checkbox" type="checkbox" name="Апартаменты" id="apartment" checked>
                 <label for="apartment">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset>
-            <legend>Стоимость в сутки (р.):</legend>
+          <fieldset class="form-filter">
+            <legend class="legend-filter">Стоимость в сутки (р.):</legend>
             <div class="form-calc">
               <label class="min-price">От
                 <input type="text" name="min-price" value="0" >
@@ -109,7 +109,7 @@
             <span>Сортировка:</span>
             <ul>
               <li class="form-sort-text">
-                <a class="form-sort-a">По цене</a>
+                <a class="form-sort-a form-sort-current">По цене</a>
               </li>
               <li class="form-sort-text">
                 <a href="#" class="form-sort-a">По типу</a>

@@ -102,92 +102,128 @@
         </div>
 
         <div class="form-sort">
-          <div class="form-result">
-            <span>Найдено: 3</span>
-          </div>
-          <div class="form-sort-check">
-            <span>Сортировка:</span>
-            <ul>
-              <li class="form-sort-text">
-                <a class="form-sort-a form-sort-current">По цене</a>
-              </li>
-              <li class="form-sort-text">
-                <a href="#" class="form-sort-a">По типу</a>
-              </li>
-              <li class="form-sort-text">
-                <a href="#" class="form-sort-a">По рейтингу</a>
-              </li>
-            </ul>
+          <div class="form-sort-wrapper">
+            <div class="form-result">
+              <span>Найдено: 3</span>
+            </div>
+            <div class="form-sort-check">
+              <span>Сортировка:</span>
+              <ul>
+                <li class="form-sort-text">
+                  <a class="form-sort-a form-sort-current">По цене</a>
+                </li>
+                <li class="form-sort-text">
+                  <a href="#" class="form-sort-a">По типу</a>
+                </li>
+                <li class="form-sort-text">
+                  <a href="#" class="form-sort-a">По рейтингу</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="form-result-order">
             <!-- Сортировка по возрастанию и убыванию-->
-            <a href="index.html"></a>
-            <a href="index.html"></a>
+            <a class="form-result-order-top" href="index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z" /></svg>
+            </a>
+            <a class="form-result-order-down form-result-order-current" href="index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11" /></svg>
+            </a>
           </div>
         </div>
       </form>
 		</section>
 
 		<section>
-			<ul class="hotel_item">
-				<li>
-          <h3><a href="catalog-item.html">Amara resort & spa</a></h3>
-          <span>гостиница</span>
-          <span>от 4000 р.</span>
-          <a href="#">подробнее</a>
-          <a href="#">забронировать</a>
+			<ul class="hotel-catalog">
+				<li class="hotel-item">
+          <div class="hotel-catalog-wrapper">
+            <div class="hotel-desc">
+              <h3><a href="catalog-item.html" class="hotel-desc-heading">Amara resort & spa</a></h3>
+              <div class="hotel-type">
+                <span>гостиница</span>
+                <span>от 4000 р.</span>
+              </div>
+              <div class="hotel-more">
+                <a class="more-btn" href="#">подробнее</a>
+                <a class="order-btn" href="#">забронировать</a>
+              </div>
+            </div>
+            <p class="hotel-photo">
+              <a href="catalog-item.html">
+              <img src="img/hotel-1.jpg" width="135" height="90" alt="Amara"></a>
+            </p>
+          </div>
           <!--Рейтинг отелей - выглядит как звёздочки -->
-          <ul class="hotels-rate">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-          </ul>
-          <span>рейтинг: 8,5</span>
-					<p>
-            <a href="catalog-item.html">
-            <img src="img/hotel-1.jpg" width="135" height="90" alt="Amara"></a>
-          </p>
+          <div class="hotels-rating">
+            <ul class="hotels-rate">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+            </ul>
+            <span>рейтинг: 8,5</span>
+          </div>
         </li>
-        <li>
-          <h3><a href="catalog-item.html">Desert Quail Inn</a></h3>
-          <span>мотель</span>
-          <span>от 3000 р.</span>
-          <a href="#">подробнее</a>
-          <a href="#">забронировать</a>
+        <li class="hotel-item">
+          <div class="hotel-catalog-wrapper">
+            <div class="hotel-desc">
+              <h3><a href="catalog-item.html" class="hotel-desc-heading">Desert Quail Inn</a></h3>
+              <div class="hotel-type">
+                <span>мотель</span>
+                <span>от 3000 р.</span>
+              </div>
+              <div class="hotel-more">
+                <a class="more-btn" href="#">подробнее</a>
+                <a class="order-btn" href="#">забронировать</a>
+              </div>
+            </div>
+            <p class="hotel-photo">
+              <a href="catalog-item.html"><img src="img/hotel-2.jpg" width="135" height="90" alt="Desert Quail Inn"></a>
+            </p>
+          </div>
           <!--Рейтинг отелей - выглядит как звёздочки -->
-          <ul class="hotels-rate">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-          </ul>
-          <span>рейтинг: 8,9</span>
-					<p>
-            <a href="catalog-item.html"><img src="img/hotel-2.jpg" width="135" height="90" alt="Desert Quail Inn"></a>
-          </p>
+          <div class="hotels-rating">
+            <ul class="hotels-rate">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+            <span>рейтинг: 8,9</span>
+          </div>
         </li>
-        <li>
-          <h3><a href="catalog-item.html">Villas at poco diablo</a></h3>
-          <span>апартаменты</span>
-          <span>от 2000 р.</span>
-          <a href="#">подробнее</a>
-          <a href="#">забронировать</a>
+        <li class="hotel-item">
+          <div class="hotel-catalog-wrapper">
+            <div class="hotel-desc">
+              <h3><a href="catalog-item.html" class="hotel-desc-heading">Villas at poco diablo</a></h3>
+              <div class="hotel-type">
+                <span>апартаменты</span>
+                <span>от 2000 р.</span>
+              </div>
+              <div class="hotel-more">
+                <a class="more-btn" href="#">подробнее</a>
+                <a class="order-btn" href="#">забронировать</a>
+              </div>
+            </div>
+            <p class="hotel-photo">
+              <a href="catalog-item.html"><img src="img/hotel-3.jpg" width="135" height="90" alt="Villas at poco diablo"></a>
+            </p>
+          </div>
           <!--Рейтинг отелей - выглядит как звёздочки -->
-          <ul class="hotels-rate">
-            <li>1</li>
-            <li>2</li>
-          </ul>
-          <span>рейтинг: 9,2</span>
-					<p>
-            <a href="catalog-item.html"><img src="img/hotel-3.jpg" width="135" height="90" alt="Villas at poco diablo"></a>
-          </p>
+          <div class="hotels-rating">
+            <ul class="hotels-rate">
+              <li>1</li>
+              <li>2</li>
+            </ul>
+            <span>рейтинг: 9,2</span>
+          </div>
         </li>
 			</ul>
 
 		</section>
 	</main>
 
-	<footer class="footer">
+	<footer class="footer footer-catalog">
 		<a class="footer-link" href="index.html">#VISITSEDONA</a>
 
     <!-- Social -->

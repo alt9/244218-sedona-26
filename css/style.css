@@ -50,12 +50,13 @@ input[type="radio"].visually-hidden {
 .main-header {
   max-width: 1200px;
   margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .main-nav {
   position: relative;
 
-  font-weight: 700;
+  font-weight: 600;
   color: #000000;
   background-color: #ffffff;
 }
@@ -105,6 +106,7 @@ input[type="radio"].visually-hidden {
   max-width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .main-heading {
@@ -126,7 +128,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   font-size: 21px;
   line-height: 26px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .main-heading-wrapper p {
@@ -156,7 +158,7 @@ input[type="radio"].visually-hidden {
 .feature-top-desc h2 {
   font-size: 21px;
   line-height: 21px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .feature-top-image {
@@ -175,7 +177,7 @@ input[type="radio"].visually-hidden {
 
 .feature-item {
   width: 400px;
-  background-color: #cccccc;
+  background-color: #ffffff;
 }
 
 .feature-item-bg {
@@ -183,14 +185,14 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-item h3 {
-  font-weight: 700;
+  font-weight: 600;
   color: #000000;
 }
 
 b {
   font-size: 30px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: 600;
   color: #000000;
 }
 
@@ -199,7 +201,7 @@ b {
 }
 
 .interest {
-  background-color: #cccccc;
+  background-color: #ffffff;
 }
 
 .hotel-search {
@@ -212,7 +214,7 @@ b {
 .form-show {
   display: inline-block;
   font: inherit;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
@@ -240,7 +242,7 @@ b {
   flex-wrap: wrap;
   font-size: 14px;
   line-height: 26px;
-  font-weight: 700;
+  font-weight: 600;
   padding: 60px 55px;
   color: #000000;
 }
@@ -372,6 +374,12 @@ b {
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
+  background-color: #f9fbf6;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.footer-catalog {
+  background-color: #fefefe;
 }
 
 .footer-link {
@@ -380,7 +388,7 @@ b {
   width: 150px;
   font-size: 21px;
   line-height: 26px;
-  font-weight: 700;
+  font-weight: 600;
   color: #000000;
 }
 
@@ -414,6 +422,7 @@ b {
 .social a:active path {
   opacity: 0.3;
 }
+
 .footer-copyright {
   display: flex;
   flex-wrap: wrap;
@@ -488,7 +497,7 @@ b {
 legend {
   font-size: 16px;
   line-height: 21px;
-  font-weight: 700;
+  font-weight: 600;
   padding-top: 29px;
   padding-bottom: 26px;
 }
@@ -528,6 +537,29 @@ legend {
   background-repeat: no-repeat;
 }
 
+.form-input-checkbox:disabled + label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off-disabled.svg");
+  background-repeat: no-repeat;
+}
+
+.form-input-checkbox:checked:disabled + label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+
+  width: 26px;
+  height: 26px;
+  background-image: url("../img/checkbox-on-disabled.svg");
+  background-repeat: no-repeat;
+}
 
 /*Фильтр с ползунками*/
 .form-calc {
@@ -653,13 +685,25 @@ legend {
 .form-sort {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   background-color: #fefefe;
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.form-sort-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-result {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .form-result span {
   font-size: 21px;
   line-height: 26px;
-  font-weight: 700;
+  font-weight: 600;
   color: #000000;
   margin-left: 72px;
 }
@@ -667,12 +711,15 @@ legend {
 .form-sort-check {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 .form-sort-check span {
   font-size: 12px;
   line-height: 18px;
   color: #000000;
+  margin-left: 50px;
 }
 
 .form-sort-check ul {
@@ -681,11 +728,13 @@ legend {
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-left: 40px;
 }
 
 .form-sort-text {
   font-size: 12px;
   line-height: 18px;
+  margin-right: 34px;
 }
 
 .form-sort-a {
@@ -693,7 +742,142 @@ legend {
   border-bottom: 2px dotted #81b3d2;
 }
 
+.form-sort-a:hover {
+  color: #81b3d2;
+  border-bottom: 2px dotted #81b3d2;
+}
+
+.form-sort-a:active {
+  color: #000000;
+}
+
 .form-sort-current {
   color: #81b3d2;
   border: none;
 }
+
+.form-sort-current:hover {
+  border: none;
+}
+
+.form-sort-current:active {
+  color: #81b3d2;
+}
+
+.form-result-order {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 34px;
+  margin-right: 73px;
+}
+
+.form-result-order-top,
+.form-result-order-down {
+  width: 11px;
+}
+
+.form-result-order-top path,
+.form-result-order-down path {
+  fill: #cacaca;
+}
+
+.form-result-order-top:hover path,
+.form-result-order-down:hover path {
+  fill: #000000;
+}
+
+.form-result-order-top:active path,
+.form-result-order-down:active path {
+  fill: #81b3d2;
+}
+
+.form-result-order-current path {
+  fill: #81b3d2;
+}
+
+.hotel-catalog {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #fefefe;
+}
+
+.hotel-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.hotel-item:last-child {
+  border: none;
+}
+
+.hotel-catalog-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hotel-desc {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  order: 1;
+  margin-left: 30px;
+}
+
+.hotel-desc h3 {
+  margin: 0;
+  margin-bottom: 13px;
+  margin-top: 25px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.hotel-desc-heading {
+  color: #000000;
+}
+
+.hotel-type {
+  margin-bottom: 16px;
+}
+
+.hotel-type span {
+  color: #333333;
+}
+
+.hotel-photo {
+  margin: 0;
+  width: 135px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.hotel-more {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.more-btn {
+  font-weight: 600;
+  color: #ffffff;
+  padding: 5px 17px;
+  background-color: #81b3d2;
+}
+
+.order-btn {
+  font-weight: 600;
+  color: #ffffff;
+  padding: 5px 17px;
+  margin-left: 6px;
+  background-color: #766357;
+}
+

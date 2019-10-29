@@ -8,7 +8,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  min-width: 1280px;
+  min-width: 1200px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -188,12 +188,14 @@ input[type="radio"].visually-hidden {
 .feature-top-desc {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 400px;
   color: #ffffff;
   background-color: #81b3d2;
 }
 
 .feature-top-desc h2 {
+  width: 160px;
   font-size: 21px;
   line-height: 21px;
   font-weight: 600;
@@ -206,9 +208,18 @@ input[type="radio"].visually-hidden {
   padding-bottom: 21px;
 }
 
-.feature-top-desc p {
+.feature-top-desc .p-width-top,
+.feature-top-desc .p-width-bottom {
   margin: 0;
   padding-bottom: 60px;
+}
+
+.feature-top-desc .p-width-top {
+  width: 285px;
+}
+
+.feature-top-desc .p-width-bottom {
+  width: 320px;
 }
 
 .feature-top-image {
@@ -228,6 +239,7 @@ input[type="radio"].visually-hidden {
 .feature-item {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 400px;
   padding-left: 55px;
   padding-right: 55px;
@@ -244,6 +256,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-item h3 {
+  width: 160px;
   font-size: 21px;
   line-height: 21px;
   font-weight: 600;
@@ -257,11 +270,13 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-item-p-padding-top {
+  width: 300px;
   margin: 0;
   padding-bottom: 83px;
 }
 
 .feature-item-p-padding {
+  width: 280px;
   margin: 0;
   padding-bottom: 60px;
 }
@@ -271,6 +286,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-item-house {
+  width: 75px;
   background-image: url("../img/icon-1.svg");
   background-repeat: no-repeat;
   background-size: 75px 72px;
@@ -281,6 +297,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-item-food {
+  width: 75px;
   background-image: url("../img/icon-3.svg");
   background-repeat: no-repeat;
   background-size: 75px 72px;
@@ -291,6 +308,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-item-gift {
+  width: 75px;
   background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
   background-size: 75px 75px;
@@ -303,6 +321,7 @@ input[type="radio"].visually-hidden {
 .interest {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #ffffff;
 }
 
@@ -472,6 +491,7 @@ b {
 .form-wrapper-people input[type="text"]:focus,
 .form-wrapper-people input[type="button"]:focus {
   background-color: #ffffff;
+  border: 2px solid #ebebeb;
 }
 
 /*Иконки календаря и плюсы-минусы*/
@@ -611,18 +631,19 @@ b {
 .map {
   width: 1200px;
   min-height: 593px;
-  background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;
+  /*background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;*/
   background-color: #f2f2f2;
   margin-top: -395px;
 }
 
 .footer {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: rgba(249, 251, 246, 0.9);
-  margin-top: -120px;
+  margin-top: -127px;
 }
 
 .footer-catalog {
@@ -650,7 +671,7 @@ b {
   list-style: none;
   width: 150px;
   margin-top: 36px;
-  margin-bottom: 36px;
+  margin-bottom: 38px;
   margin-left: 16px;
 }
 
@@ -1009,6 +1030,7 @@ legend {
 
 .form-sort-a:active {
   color: #000000;
+  border: none;
 }
 
 .form-sort-current {
@@ -1108,7 +1130,7 @@ legend {
 }
 
 .hotel-desc-heading:active {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .hotel-type {

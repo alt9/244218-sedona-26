@@ -322,6 +322,7 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
+  z-index: 12;
 }
 
 b {
@@ -344,6 +345,10 @@ b {
   flex-direction: column;
   width: 568px;
   margin: 0 auto;
+}
+
+.form-head-wrapper {
+  z-index: 11;
 }
 
 .form-show {
@@ -383,10 +388,111 @@ b {
   background-color: #ffffff;
   box-shadow: 0 0 13px rgba(0, 0, 0, 0.3);
   z-index: 10;
+
+  -webkit-animation-name: form-show;
+  animation-name: form-show;
+  -webkit-animation-duration: 1s, 1.3s;
+  animation-duration: 1s, 1.3s;
+  -webkit-animation-fill-mode: forwards, forwards;
+  animation-fill-mode: forwards, forwards;
+
+  opacity: 1;
 }
 
 .form-wrapper-hide {
-  display: none;
+  -webkit-animation-name: form-hide;
+  animation-name: form-hide;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  opacity: 0;
+}
+
+.form-wrapper-error {
+  -webkit-animation-name: form-wrapper-error;
+  animation-name: form-wrapper-error;
+  -webkit-animation-duration: 0.1s;
+  animation-duration: 0.1s;
+  -webkit-animation-iteration-count: 3;
+  animation-iteration-count: 3;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes form-show {
+  from {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes form-show {
+  from {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes form-hide {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+  }
+}
+
+@keyframes form-hide {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+  }
+}
+
+@-webkit-keyframes form-wrapper-error {
+  25% {
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+  75% {
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes form-wrapper-error {
+  25% {
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+  75% {
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 
 .form-wrapper-date {
